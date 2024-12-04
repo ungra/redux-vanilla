@@ -9,7 +9,8 @@ store
 reducer
 : store는 reducer를 필요로 함.
 : reducer는 state를 update하는 function임. data 변경을 담당.
-: return value가 application의 data임.
+: return value가 application의 state임.
 
 action
-: reducer에게 message를 보내기 위함. object.
+: reducer에게 message를 보내기 위함.
+: object형태여야만 하고 type이 있어야 함.
