@@ -55,6 +55,9 @@ configureStore
 : createStore with middleware
 : middleware에서 monitoring(redux developer tools)도 제공함.
 
+createSlice
+: action과 reducer 자동 생성.
+
 ---
 
 <React>
