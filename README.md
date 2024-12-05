@@ -35,3 +35,11 @@ mapStateToProps
 
 mapDispatchToProps
 : react component에 dispatch 전달 및 추가
+
+---
+
+<React>
+
+useParams
+: react router에서 제공하는 hook
+: 현재 URL에서 경로 매개변수를 사용할 수 있게 함.
