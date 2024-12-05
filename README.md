@@ -20,3 +20,12 @@ dispatch
 
 getState
 : return a current state
+
+connect
+: react component와 redux 연결
+
+mapStateToProps
+: react component에 state 전달 및 추가
+
+mapDispatchToProps
+: react component에 dispatch 전달 및 추가

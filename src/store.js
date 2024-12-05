@@ -17,7 +17,7 @@ const deleteTodo = (id) => {
   };
 };
 
-const reducer = (state = ["hello"], action) => {
+const reducer = (state = [], action) => {
   switch (action.type) {
     case ADD:
       return [...state, { text: action.text, id: Date.now() }];
