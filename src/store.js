@@ -1,21 +1,7 @@
-import { createStore } from "redux";
-import { createAction, createReducer } from "@reduxjs/toolkit";
-import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
+import { configureStore, createAction, createReducer } from "@reduxjs/toolkit";
 
 const addTodo = createAction("ADD");
 const deleteTodo = createAction("DELETE");
-
-// const reducer = (state = [], action) => {
-//   console.log(action);
-//   switch (action.type) {
-//     case addTodo.type:
-//       return [...state, { text: action.payload, id: Date.now() }];
-//     case deleteTodo.type:
-//       return state.filter((todo) => todo.id !== action.payload);
-//     default:
-//       return state;
-//   }
-// };
 
 const reducer = createReducer([], (builder) => {
   builder.addCase(addTodo, (state, action) => {
@@ -26,7 +12,7 @@ const reducer = createReducer([], (builder) => {
   );
 });
 
-const store = createStore(reducer);
+const store = configureStore({ reducer: reducer });
 
 export const actionCreators = {
   addTodo,

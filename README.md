@@ -51,6 +51,10 @@ createReducer
 : return new state하거나 mutate state 하면 됨.(mutate 가능)
 : mutate가 가능한 이유는 redux toolkit이 Immer를 사용하는데 여기서 새로운 state로 만들어서 리턴함.
 
+configureStore
+: createStore with middleware
+: middleware에서 monitoring(redux developer tools)도 제공함.
+
 ---
 
 <React>
