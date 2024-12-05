@@ -1,5 +1,7 @@
 # Learning Redux-VanillaJavaScript
 
+<Redux>
+
 redux
 : data를 한곳으로 모아서 관리.
 
@@ -37,6 +39,17 @@ mapStateToProps
 mapDispatchToProps
 : react component에 dispatch 전달 및 추가
 : dispatch
+
+<Redux-toolkit>
+redux의 boilerplate code를 줄여줌
+
+createAction
+: action 생성
+
+createReducer
+: reducer 생성
+: return new state하거나 mutate state 하면 됨.(mutate 가능)
+: mutate가 가능한 이유는 redux toolkit이 Immer를 사용하는데 여기서 새로운 state로 만들어서 리턴함.
 
 ---
 
