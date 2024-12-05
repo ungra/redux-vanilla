@@ -32,9 +32,11 @@ connect
 
 mapStateToProps
 : react component에 state 전달 및 추가
+: getState
 
 mapDispatchToProps
 : react component에 dispatch 전달 및 추가
+: dispatch
 
 ---
 
