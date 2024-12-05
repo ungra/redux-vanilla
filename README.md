@@ -21,8 +21,14 @@ dispatch
 getState
 : return a current state
 
+subscribe
+: state 변경시 호출할 callback 등록
+: callback에서 rendering 관련 로직은 하지 않아야 함.
+: store.getState()를 통해 최신 state 받아올 수 있음.
+
 connect
 : react component와 redux 연결
+: react에서는 subscribe 대신 connect나 useSelector를 사용해서 state 변화를 관리함.
 
 mapStateToProps
 : react component에 state 전달 및 추가
