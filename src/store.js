@@ -8,7 +8,7 @@ const todo = createSlice({
       state.push({ text: action.payload, id: Date.now() });
     },
     remove: (state, action) =>
-      state.filter((todo) => todo.id === action.payload),
+      state.filter((todo) => todo.id !== action.payload),
   },
 });
 
